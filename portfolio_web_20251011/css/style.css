@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+body {
+    background-color: #fffeee;
+}
+
+.logo {
+    width: 420px;
+}
+
+
+.concept_title {
+    font-size: 43px;
+}
+
+.concept_main {
+    font-size: 22px;
+    margin-bottom: 100px;
+}
+
+/* あとで画像に差し替える */
+.karioki {
+    background-color: lightgray;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+}
+
+/* あとで問い合わせフォームに差し替える */
+.karioki_form {
+    background-color: lightsteelblue;
+    width: 300px;
+    height: 300px;
+}
+
+.icon {
+    display: inline-block;
+}
+
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #f4cf4f;
+}
+
+/* コンテンツ見出しの「●」と文字（「できること」など）を並べたい */
+h2 {
+    display: flex;
+    align-items: center;
+}
+
+.service-lists {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.service-lists p {
+    margin-left: 20px;
+}
+
+#service p {
+    font-size: 18px;
+}
+
+.service_img {
+    width: 300px;
+}
+
+.nigaoe_img {
+    width: 310px;
+}
+
+.my_profile {
+    width: 400px;
+    margin: 45px 0;
+    font-size: 18px;
+}
+
+.works-lists li {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.works-lists p {
+    margin-left: 20px;
+}
+
+.btn_more {
+    width: max-content;
+    height: 100%;
+    color: #fff;
+    background-color: #267f9d;
+    border-radius: 50px;
+}
+
+.btn_send {
+    width: max-content;
+    height: 100%;
+    color: #fff;
+    background-color: #267f9d;
+    border-radius: 50px;
+}
+
+#footer {
+    background-color: #267f9d;
+}
+
+.footer_nav li {
+    display: flex;
+    align-items: center;
+    background-color: #6ea1b1;
+    width: max-content;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+
+.footer_nav p {
+    color: #fff;
+}
+
+.copyright{
+    color: #fff;
+}
