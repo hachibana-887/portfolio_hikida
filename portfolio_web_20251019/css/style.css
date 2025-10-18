@@ -1,0 +1,359 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'LINE Seed JP_OTF'; /* 任意のフォント名 */
+	font-style: normal;
+	/* font-weight: 400; */
+	src: url('/fonts/LINESeedJP_OTF_Bd.woff') format('woff'),
+    url('/fonts/LINESeedJP_OTF_Eb.woff') format('woff'),
+    url('/fonts/LINESeedJP_OTF_Rg.woff') format('woff'),
+    url('/fonts/LINESeedJP_OTF_Th.woff') format('woff');
+}
+
+body {
+    background-color: #fffeee;
+    display: flex;
+    width: 6000px;
+    font-family: 'LINE Seed JP_OTF', sans-serif;
+}
+
+section {
+    width: 950px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+#header {
+    background-color: rgb(255, 171, 255);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+}
+
+.header_inner h1 {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    width: 240px;
+}
+
+#concept p {
+    text-align: center;
+}
+
+.concept_title {
+    font-size: 43px;
+}
+
+.concept_main {
+    font-size: 22px;
+    margin-top: 50px;
+}
+
+
+.icon {
+    display: inline-block;
+}
+
+
+
+h2 {
+    display: flex;
+    position: relative;
+    padding-left: 30px;
+    align-items: center;
+}
+
+h2::before {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    content: "";
+    background: #f4cf4f;
+    border-radius: 50%;
+    left: 0;
+}
+
+.service-lists {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.service-lists p {
+    margin-left: 20px;
+}
+
+#service p {
+    font-size: 18px;
+}
+
+.service_img {
+    width: 300px;
+}
+
+.nigaoe_img {
+    width: 310px;
+}
+
+.my_profile {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 450px;
+    margin: 45px 0;
+    font-size: 18px;
+}
+
+.works-lists li {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.works-lists img {
+    width: 300px;
+}
+
+.works-lists p {
+    margin-left: 20px;
+}
+
+.btn_more {
+    color: #fff;
+    background-color: #267f9d;
+    border-radius: 50px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.btn_send {
+    color: #fff;
+    background-color: #267f9d;
+    border-radius: 50px;
+    width: 150px;
+    text-align: center;
+    font-size: large;
+    cursor: pointer;
+}
+
+#footer {
+    position: fixed;
+    height: 100%;  /*100vhではない？*/
+    right: 0;
+    background-color: #267f9d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 9999;
+}
+
+.footer_nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.footer_nav li {
+    display: flex;
+    align-items: center;
+    background-color: #267f9d;
+    width: max-content;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    margin-left: -50px;
+}
+
+.footer_nav p {
+    color: #fff;
+    display: flex;
+    position: relative;
+    padding-left: 30px;
+    align-items: center;
+}
+
+.footer_nav p::before {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    content: "";
+    background: #f4cf4f;
+    border-radius: 50%;
+    left: 0;
+}
+
+.footer_nav a {
+    width: 50%;
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.copyright{
+    color: #fff;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+
+/* 全体のスタイルを統一 */
+* {
+    box-sizing: border-box; /* これで padding, border を含めたサイズ計算をする */
+    margin: 0;
+    padding: 0;
+}
+
+/* お問い合わせフォーム */
+form {
+    background-color: white;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    /* margin: auto; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%; 
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+button {
+    background-color: #269d64;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 50%;
+    margin-top: 10px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ec8570;
+    transition: .8s;
+}
+
+/* ページトップへ戻るボタン */
+
+#pagetop a {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  background: #ec8570;
+  color: #fff;
+  right: 10px;
+  bottom: 0px;
+  transition: .8s; 
+}
+
+#pagetop a span {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width :80px;
+  text-align:center;
+}
+
+#pagetop a:hover {
+  opacity: .8;
+}
+
+#pagetop {
+    position: fixed;
+    bottom: 0;
+    right: 100px;
+    width: 20%;
+    z-index: 10000;
+}
+
+/* フェードテスト★１★ */
+.box_1 {
+    width: 300px;
+    height: 300px;
+    opacity:0;
+}
+.fadeInRight {
+    transition: all .8s ease-in;
+    transform: translateX(40px);
+    opacity: 1 !important;
+    background-color: #2253ad;
+    color: #ccc;
+}
+/* フェードテスト★１★ここまで */
+
+
+
+
+
+/* Works.html */
+.works-thumbnail-lists ul {
+    display: flex;
+    max-width: 960px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem; /*指定したサイズで余白をとる_※flexがないと効かない*/
+}
+
+.thumbnail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+.remodal {
+  position: relative;
+  padding: 25px;
+}
+.remodal img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.remodal p {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.remodal-cancel {
+  color: #fff;
+  background: #117391;
+  width: 100%;
+  margin-top: 25px;
+}
+.remodal-cancel:hover {
+  background: #65c9dd;
+}

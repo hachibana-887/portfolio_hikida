@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hikida Design</title>
+    <link rel="icon" href="./images"> <!-- ファビコン設定する -->
+    <!--▼CSS読み込み-->
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link href="
+    https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css
+    " rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+
+    <header id="header">
+        <div class="header_inner">
+            <h1 class="logo">
+                <a href="./index.html">
+                    <img src="./images/Hikida_design_logo.png" alt="Hikida Design logo"/>
+                </a>
+            </h1>
+        </div>
+    </header>
+
+    <div
+            class="mainvisual"
+            style="
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 20%;
+            ">
+            <img src="./images/hikida_animation_1011.gif" alt="つなひきモーション"/>
+    </div>
+
+    <main data-scroll-container>
+
+    <!-- P1  コンセプト-->
+    <section data-scroll-section id="concept">
+
+        <p class="concept_title">
+            デザインでワクワクをひきだします
+        </p>
+        <p class="concept_main">
+            「引き出し方」にもいろいろあると思うのです<br>
+            たとえば運動会の綱のように<br>
+            引きつ引かれつ手繰り寄せていくとか<br>
+            <br>
+            Hikida Designは<br>
+            その人に合わせた引き出し方で<br>
+            困りごとを紐解き解決させていきます
+        </p>
+
+    </section>
+
+    <!-- P2 サービス内容 -->
+    <section data-scroll-section id="service">
+        <h2>できること</h2>
+        <nav class="service-lists">
+            <div class="service_img">
+                <img src="./images/service_graphic.jpg" alt="graphic"/>
+            </div>
+            <p>
+                【対応可能】<br>
+                チラシ／リーフレット<br>
+                名刺／ロゴ／イラスト
+            </p>
+        </nav>
+        <nav class="service-lists">
+            <div class="service_img">
+                <img src="./images/service_web.jpg" alt="web"/>
+            </div>
+            <p>
+                【対応可能】<br>
+                各種SNS投稿画像／バナー<br>
+                LP／HP
+            </p>
+        </nav>
+        <p>
+            スキル<br>
+            Adobe Illustrator／Photoshop／Premiere Pro<br>
+            Procreate<br>
+            HTML／CSS／JavaScript
+        </p>
+    </section>
+
+    <!-- P3 自己紹介 -->
+    <section data-scroll-section id="profile">
+        <h2>じぶんのこと</h2>
+        <div class="nigaoe_img">
+            <img src="./images/hikida_profile.jpg" alt="ひきだ自画像"/>
+        </div>
+        <p class="my_profile">
+            生活介護施設の支援員や、教育機関の事務局員として、一日、一年を通して目の前にいる唯その人に寄り添い支える働き方をしてきました。
+            <br>
+            現在、広告サービス会社にてDTPオペレーター兼デザイナーとして活動しています。<br>
+            デザイン＋印刷知識を活かし、画面上のデータがお客様の手の上でかたちになる瞬間までを支えます。
+        </p>
+    </section>
+
+    <!-- P4 制作実績 -->
+    <section data-scroll-section id="works">
+        <h2>つくったもの</h2>
+        <nav class ="works-lists">
+            <ul>
+                <li>
+                    <img src="./images/works/works_lp_life.png" alt="ヘアサロンLP">
+                    <p>
+                        2025.10.10<br>
+                        バーガーショップバナーデザイン<br>
+                        #WEB  #バナー<br>
+                    </p>
+                </li>
+                <li>
+                    <img src="./images/works/works_leaflet_yuzu.png" alt="サウナリゾートのリーフレット">
+                    <p>
+                        2025.10.10<br>
+                        バーガーショップバナーデザイン<br>
+                        #WEB  #バナー<br>
+                    </p>
+                </li>
+                <!-- <li>
+                    <img src="./images/works/works_banner_hamburger.png" alt="ハンバーガーのバナー（POP）">
+                    <p>
+                        2025.10.10<br>
+                        バーガーショップバナーデザイン<br>
+                        #WEB  #バナー<br>
+                    </p>
+                </li> -->
+            </ul>
+        </nav>
+        <button class="btn_more"><a href="./works.html">もっと見る</a></button>
+
+    </section>
+
+    <!-- P5 お問い合わせフォーム -->
+    <section data-scroll-section id="contact">
+        <h2>はなしてみる</h2>
+        <p>
+            お仕事のご相談、ポートフォリオのご感想など<br>
+            お気軽にご連絡ください。<br>
+            <br>
+            InstagramのDMでも受け付けております。
+        </p>
+        <form>
+        <label for="name">お名前:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">メールアドレス:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">お問い合わせ内容:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">送信</button>
+        </form>
+        <button class="btn_send">送信</button>
+
+        <div class="box_1">フェード１のテスト</div>
+
+    </section>
+
+    <div id="pagetop">
+        <img src="./images/partner.png" alt="つなひきのお相手">
+        <a href="./index.html">
+        <span>
+            TOPに<br>
+            もどる
+        </span>
+        </a>
+    </div>
+
+    </main>
+
+    <!-- フッター -->
+    <footer id="footer">
+        <nav class="footer_nav">
+            <ul>
+                <a href="">
+                <li>
+                    <p>はじめに</p>
+                </li>
+                </a>
+                <a href="">
+                <li>
+                    <p>サービス</p>
+                </li>
+                </a>
+                <a href="">
+                <li>
+                    <p>自己紹介</p>
+                </li>
+                </a>
+                <a href="">
+                <li>
+                    <p>制作実績</p>
+                </li>
+                </a>
+                <a href="">
+                <li>
+                    <p>連絡する</p>
+                </li>
+                </a>
+            </ul>
+            <a class="icon" href="https://www.instagram.com/hikida_design/"><img src="./images/icon_instagram.png" alt="インスタアカウント"></a>
+            <!--▼ あとでXアイコンに変更-->
+            <a class="icon" href="https://www.instagram.com/hikida_design/"><img src="./images/icon_instagram.png" alt="Xアカウント"></a>
+            <a class="icon"><img src="./images/icon_mail.png" alt="メール"></a>
+        </nav>
+        <p class="copyright">
+            &copy;2025 Hikida Design
+        </p>
+    </footer>
+
+    <!-- ▼ JQuery 読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <!-- ▼ locomotive-scroll 読み込み -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox.min.js" integrity="sha512-KbRFbjA5bwNan6DvPl1ODUolvTTZ/vckssnFhka5cG80JVa5zSlRPCr055xSgU/q6oMIGhZWLhcbgIC0fyw3RQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    
+    <!-- フェードテスト（inview） -->
+    <script type="text/javascript" src="jquery/jquery.inview.min.js"></script>
+
+    <!-- ▼ locomotive-scroll 初期化スクリプト -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true,          // スムーススクロールON
+            direction: 'horizontal', // 'horizontal' 横スクロール
+            smartphone: {
+                smooth: true
+            },
+            tablet: {
+                smooth: true
+            }
+        });
+    });
+    </script>
+
+    <!-- フェードテスト★１★ -->
+    <script>
+        $('.box_1').on('inview', function(event, isInView){
+            if (isInView) {
+                $(this).addClass('fadeInRight');
+            }else{
+                $(this).removeClass('fadeInRight');
+            }
+        });
+    </script>
+    <!-- フェードテスト★１★ここまで -->
+
+    <!-- フェードテスト★２★ ※現状ヨコ型スクロールで効いていない・縦スクロールで試したら効いていた-->
+    <!-- <script>
+        // 上へ戻るボタン
+        $(function(){
+        var pagetop = $('#pagetop');
+        // 普段はボタン非表示
+        pagetop.hide();
+        // 100px スクロールしたらボタン表示（フェードインで） 
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                pagetop.fadeIn();
+            // そうでない場合は非表示（フェードアウトで）      
+            } else {
+                pagetop.fadeOut();
+            }
+        });
+        // ボタンをクリックしたら500ミリ秒かけてページ上部（0pxの位置）までスクロールアップで移動
+        pagetop.click(function () {
+            $('body, html').animate({ scrollTop: 0 }, 500);
+            return false;
+        });
+        });
+    </script> -->
+    <!-- フェードテスト★２★ここまで -->
+
+    <script>
+$(function () {
+  // スクロール時の処理
+  $(window).scroll(function () {
+    // 対象要素に初期状態のスタイルを付与
+    $(".scrollAnim").addClass("ready");
+  
+    // ウィンドウの高さを取得
+    const windowHeight = $(this).height();
+
+    // 現在の座標を取得
+    const scrollAmount = $(this).scrollTop();
+
+    $(".ready").each(function () {
+      // 対象要素の座標を取得
+      const targetPosition = $(this).offset().top;
+
+      // 対象要素が画面内に入った時の処理
+      if (scrollAmount > targetPosition - windowHeight + 60) {
+        $(this).addClass("active");
+      } else {
+        $(this).removeClass("active");
+      }
+      
+      // 座標カウンター
+      $("#no").html(scrollAmount);
+    });
+  });
+});
+
+    </script>
+
+
+
+
+
+</body>
+</html>
